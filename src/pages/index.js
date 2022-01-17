@@ -8,7 +8,7 @@ import About from "../components/About"
 import Services from "../components/Services"
 import Contact from "../components/Contact"
 import Portfolio from "../components/Portfolio"
-import CustomFooter from "../components/Customfooter"
+import CustomFooter from "../components/CustomFooter"
 
 import * as styles from "../style/index.module.css"
 import "../style/globalstyles.css"
