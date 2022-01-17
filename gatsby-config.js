@@ -23,14 +23,12 @@ module.exports = {
         fonts: ["material icons"],
       },
     },
-    "kute.js",
     `gatsby-plugin-material-ui`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

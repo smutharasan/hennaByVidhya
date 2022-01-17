@@ -29,27 +29,27 @@ export const navbar = ({ toggleSideBar, toggleAriaAttr }) => {
         <nav>
           <ul className="primary-navigation flex" id="primary-navigation">
             <li>
-              <AnchorLink className="anchorLink" to="/index#Home" title="">
+              <AnchorLink className="anchorLink" to="/#Home" title="">
                 <span>Home</span>
               </AnchorLink>
             </li>
             <li>
-              <AnchorLink className="anchorLink" to="/index#Services" title="">
+              <AnchorLink className="anchorLink" to="/#Services" title="">
                 <span>Services</span>
               </AnchorLink>
             </li>
             <li>
-              <AnchorLink className="anchorLink" to="/index#About" title="">
+              <AnchorLink className="anchorLink" to="/#About" title="">
                 <span>About</span>
               </AnchorLink>
             </li>
             <li>
-              <AnchorLink className="anchorLink" to="/index#Portfolio" title="">
+              <AnchorLink className="anchorLink" to="/#Portfolio" title="">
                 <span>Portfolio</span>
               </AnchorLink>
             </li>
             <li>
-              <AnchorLink className="anchorLink" to="/index#Contact" title="">
+              <AnchorLink className="anchorLink" to="/#Contact" title="">
                 <span>Contact</span>
               </AnchorLink>
             </li>

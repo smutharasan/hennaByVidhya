@@ -14,7 +14,10 @@ const Services = () => {
   }
   console.log(new Date("December 17, 1995 03:24:00").getFullYear())
   return (
-    <section className="section flex flex-direction-column services-section">
+    <section
+      id="Services"
+      className="section flex flex-direction-column services-section"
+    >
       <LayeredWaveSVG flipped={true}></LayeredWaveSVG>
       <h2 className="services-heading">services</h2>
       <div className="flex services-container">

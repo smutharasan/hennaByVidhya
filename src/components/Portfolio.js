@@ -11,7 +11,10 @@ import "../style/portfolio.css"
 
 const Portfolio = () => {
   return (
-    <section className="flex flex-direction-column section portfolio-section">
+    <section
+      id="Portfolio"
+      className="flex flex-direction-column section portfolio-section"
+    >
       <h2 className="portfolio-header">Check out my work ...</h2>
       <div className="portfolio-container">
         <div className="grid featured-grid">
@@ -67,19 +70,49 @@ const Portfolio = () => {
             />
           </div>
           <div className="card picture-card">
-            <video controls type="video/mp4" src={HennaVideoOne} autoPlay muted></video>
+            <video
+              controls
+              type="video/mp4"
+              src={HennaVideoOne}
+              autoPlay
+              muted
+            ></video>
           </div>
           <div className="card picture-card">
-            <video controls type="video/mp4" src={HennaVideoTwo} autoPlay muted></video>
+            <video
+              controls
+              type="video/mp4"
+              src={HennaVideoTwo}
+              autoPlay
+              muted
+            ></video>
           </div>
           <div className="card picture-card">
-            <video controls type="video/mp4" src={HennaVideoThree} autoPlay muted></video>
+            <video
+              controls
+              type="video/mp4"
+              src={HennaVideoThree}
+              autoPlay
+              muted
+            ></video>
           </div>
           <div className="card picture-card">
-            <video controls type="video/mp4" src={HennaVideoFour} autoPlay muted></video>
+            <video
+              controls
+              type="video/mp4"
+              src={HennaVideoFour}
+              autoPlay
+              muted
+            ></video>
           </div>
           <div className="card picture-card">
-            <video controls type="video/mp4" src={HennaVideoFive} autoPlay muted></video>
+            <video
+              controls
+              type="video/mp4"
+              src={HennaVideoFive}
+              autoPlay
+              muted
+            ></video>
           </div>
         </div>
       </div>

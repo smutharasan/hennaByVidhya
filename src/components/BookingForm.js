@@ -52,7 +52,7 @@ const BookingForm = () => {
   const { values, setValues, handleInputChange } = UseForm(initialFieldValues)
   
   return (
-    <form className="booking-apt-form" autoComplete="off">
+    <form id="BookingForm" className="booking-apt-form" autoComplete="off">
       <Grid container>
         <Grid item xs={12}>
           <h2 className="booking-form-header">From An Artist to An Artist</h2>
@@ -96,7 +96,7 @@ const BookingForm = () => {
             minutesStep={15}
           ></DateTimePicker>
         </Grid>
-        <Button style={{margin:"auto",width:"auto"}}>Submit</Button>
+        <Button style={{ margin: "auto", width: "auto" }}>Submit</Button>
       </Grid>
     </form>
   )

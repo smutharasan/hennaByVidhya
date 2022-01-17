@@ -5,8 +5,8 @@ import "../style/about.css"
 const About = () => {
 
   return (
-    <section className="section about-section">
-      {/* <div className="blob-wrapper">
+    <section id="About" className="section about-section">
+      <div className="blob-wrapper">
         <svg
           id="visual"
           viewBox="0 0 900 600"
@@ -24,7 +24,7 @@ const About = () => {
             ></path>
           </g>
         </svg>
-      </div> */}
+      </div>
       <div className="about-main-content flex">
         <div className="aboutImageWrapper">
           <StaticImage

@@ -1,8 +1,10 @@
 import React from "react"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import { DefaultButton } from "../styled-components/button.styled"
+
 function Hero() {
   return (
-    <div className="hero-container">
+    <div id="Home" className="hero-container">
       <div className="landing-text-wrapper">
         <h1>
           <span className="animating top-hero-text">Henna</span>
@@ -41,7 +43,10 @@ function Hero() {
             </g>
           </g>
         </svg>
-        <span className="hero-button-text-wrapper">Book Now!</span>
+
+        <AnchorLink className="anchorLink" to="/#BookingForm" title="">
+          <span className="hero-button-text-wrapper">Book Now!</span>
+        </AnchorLink>
       </DefaultButton>
     </div>
   )
