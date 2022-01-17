@@ -1,0 +1,280 @@
+/** NEW COPY **/
+/*
+=============== 
+Fonts
+===============
+*/
+/* @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+
+/*
+=============== 
+Variables
+===============
+*/
+
+@font-face {
+  font-family: "Maria Aishane";
+  src: url("../../static/fonts/Maria Aishane Script.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --black: black;
+  --white:white;
+  --dark-color: #290e00;
+  --orange-solid: #fe5503;
+  --wheat-solid: #fdeed8;
+  --light-espresso-solid: #c59765;
+  --brown-solid: hsl(20, 98%, 17%);
+
+  --brown-transparent: rgba(126, 42, 18, 0.5);
+  --brown-transparent-alt: rgba(126, 42, 2, 0.7);
+
+  --brown-light: rgb(212, 56, 1);
+  /* dark shades of primary color*/
+  /* --clr-primary-1: hsl(43, 86%, 17%); */
+  --brown-solid: #561d01;
+
+  --clr-primary-1: #561d01;
+  --clr-primary-2: hsl(20, 98%, 22%);
+  --clr-primary-3: hsl(20, 97%, 28%);
+  --clr-primary-4: hsl(20, 98%, 34%);
+  --clr-primary-5: hsl(20, 98%, 41%);
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(20, 97%, 53%);
+  --clr-primary-7: hsl(20, 98%, 59%);
+  --clr-primary-8: hsl(20, 98%, 66%);
+  --clr-primary-9: hsl(20, 98%, 78%);
+  --clr-primary-10: hsl(20, 96%, 91%);
+  /* darkest wheat - used for headings */
+  --clr-wheat-1: hsl(36, 90%, 92%);
+  --clr-wheat-3: hsl(36, 63%, 76%);
+  --clr-wheat-4: hsl(36, 57%, 67%);
+
+  /* wheat used for paragraphs */
+  --clr-wheat-5: hsl(37, 50%, 77%);
+  --clr-wheat-8: hsl(37, 61%, 100%);
+  --clr-wheat-9: hsl(39, 63%, 100%);
+  --clr-wheat-10: hsl(37, 66%, 100%);
+  --clr-green-dark: hsl(125, 67%, 35%);
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-white: #fff;
+  --ff-primary: "Merriweather", serif;
+  --ff-secondary: "Recursive", sans-serif;
+  --ff-alt-one: "Cedarville Cursive", cursive;
+  --transition: all 0.3s linear;
+  --spacing: 0.2rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 700px;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--ff-secondary);
+  background: var(--brown-solid);
+  color: var(--clr-wheat-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+  /*margin-top: 5rem;*/
+  overflow-x: hidden;
+}
+
+header {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  position: relative;
+  width: 100%;
+  min-height: fit-content;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: var(--clr-wheat-3);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary);
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-wheat-3);
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+    background: var(--brown-solid);
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+/*  global classes */
+
+.btn {
+  text-transform: uppercase;
+  background: var(--clr-primary-5);
+  color: var(--clr-primary-9);
+  padding: 0.375rem 0.75rem;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  font-weight: 700;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  font-size: 0.875rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius);
+}
+.btn:hover {
+  color: var(--clr-primary-1);
+  background: var(--clr-primary-8);
+}
+.center-btn {
+  display: block;
+  width: 12rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.primary-header {
+  margin-bottom: 1rem;
+
+  height: fit-content;
+}
+
+@media (max-width: 45rem) {
+  .primary-header {
+    margin-bottom: 2rem;
+    height: 3rem;
+  }
+}
+/* section */
+.section {
+  padding: 5rem 0;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+/* added during recording */
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: var(--clr-primary-5);
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-title {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.bg-wheat {
+  background: var(--clr-wheat-10);
+}
+/* page links */
+
+/* social links */
+.social-links {
+  margin-top: 2rem;
+  width: 15rem;
+  display: flex;
+  justify-content: space-between;
+}
+.social-link {
+  font-size: 1.75rem;
+  color: var(--clr-wheat-1);
+  transition: var(--transition);
+}
+.social-link:hover {
+  color: var(--clr-primary-5);
+}

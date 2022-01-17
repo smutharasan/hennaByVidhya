@@ -1,0 +1,57 @@
+:root {
+  --dark-color: #290e00;
+  --orange-solid: #fe5503;
+  --wheat-solid: #fdeed8;
+  --light-espresso-solid: #c59765;
+  --brown-solid: hsl(20, 98%, 17%);
+
+  --brown-transparent: rgba(126, 42, 18, 0.5);
+  --brown-transparent-alt: rgba(126, 42, 2, 0.7);
+
+  --brown-light: rgb(212, 56, 1);
+  /* dark shades of primary color*/
+  /* --clr-primary-1: hsl(43, 86%, 17%); */
+  --brown-solid: #561d01;
+
+  --clr-primary-1: #561d01;
+  --clr-primary-2: hsl(20, 98%, 22%);
+  --clr-primary-3: hsl(20, 97%, 28%);
+  --clr-primary-4: hsl(20, 98%, 34%);
+  --clr-primary-5: hsl(20, 98%, 41%);
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(20, 97%, 53%);
+  --clr-primary-7: hsl(20, 98%, 59%);
+  --clr-primary-8: hsl(20, 98%, 66%);
+  --clr-primary-9: hsl(20, 98%, 78%);
+  --clr-primary-10: hsl(20, 96%, 91%);
+  /* darkest wheat - used for headings */
+  --clr-wheat-1: hsl(36, 90%, 92%);
+  --clr-wheat-3: hsl(36, 63%, 76%);
+  --clr-wheat-4: hsl(36, 57%, 67%);
+  /* wheat used for paragraphs */
+
+  --clr-wheat-5: hsl(37, 50%, 77%);
+  --clr-wheat-8: hsl(37, 61%, 100%);
+  --clr-wheat-9: hsl(39, 63%, 100%);
+  --clr-wheat-10: hsl(37, 66%, 100%);
+  --clr-green-dark: hsl(125, 67%, 35%);
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-white: #fff;
+  --ff-primary: "Merriweather", serif;
+  --ff-secondary: "Recursive", sans-serif;
+  --ff-alt-one: "Cedarville Cursive", cursive;
+  --transition: all 0.3s linear;
+  --spacing: 0.2rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 700px;
+}
+
+.page {
+  margin: 1rem 0;
+  /* outline: white solid 3px; */
+  background: var(--brown-solid);
+}

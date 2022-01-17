@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+
+@font-face {
+  font-family: "Beautiful Bloom Alt";
+  src: url("../../static/fonts/BeautifulBloom-Alt.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Beautiful Bloom";
+  src: url("../../static/fonts/BeautifulBloom-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Noelan";
+  src: url("../../static/fonts/noelan script.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "The Historia Demo";
+  src: url("../../static/fonts/thehistoriademo-webfont.woff2") format("woff2"),
+    url("../../static/fonts/thehistoriademo-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Maria Aishane";
+  src: url("../../static/fonts/Maria Aishane Script.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --dark-color: #290e00;
+  --orange-solid: #fe5503;
+  --wheat-solid: #fdeed8;
+  --light-espresso-solid: #c59765;
+  --brown-solid: hsl(20, 98%, 17%);
+
+  --brown-transparent: rgba(126, 42, 18, 0.5);
+  --brown-transparent-alt: rgba(126, 42, 2, 0.7);
+
+  --brown-light: rgb(212, 56, 1);
+  /* dark shades of primary color*/
+  /* --clr-primary-1: hsl(43, 86%, 17%); */
+  --brown-solid: #561d01;
+
+  --clr-primary-1: #561d01;
+  --clr-primary-2: hsl(20, 98%, 22%);
+  --clr-primary-3: hsl(20, 97%, 28%);
+  --clr-primary-4: hsl(20, 98%, 34%);
+  --clr-primary-5: hsl(20, 98%, 41%);
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(20, 97%, 53%);
+  --clr-primary-7: hsl(20, 98%, 59%);
+  --clr-primary-8: hsl(20, 98%, 66%);
+  --clr-primary-9: hsl(20, 98%, 78%);
+  --clr-primary-10: hsl(20, 96%, 91%);
+  /* darkest wheat - used for headings */
+  --clr-wheat-1: hsl(36, 90%, 92%);
+  --clr-wheat-3: hsl(36, 63%, 76%);
+  --clr-wheat-4: hsl(36, 57%, 67%);
+  /* wheat used for paragraphs */
+  --clr-wheat-5: hsl(37, 50%, 77%);
+  --clr-wheat-8: hsl(37, 61%, 100%);
+  --clr-wheat-9: hsl(39, 63%, 100%);
+  --clr-wheat-10: hsl(37, 66%, 100%);
+  --clr-green-dark: hsl(125, 67%, 35%);
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-white: #fff;
+  --ff-primary: "Merriweather", serif;
+  --ff-secondary: "Recursive", sans-serif;
+  --ff-alt-one: "Cedarville Cursive", cursive;
+  --transition: all 0.3s linear;
+  --spacing: 0.2rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 700px;
+}
+
+
+#logoWrapper {
+  border-radius: 1rem;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: url("../../static/images/HennaByVidhyaLogo.png");
+  margin: 1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  top: 2em;
+  left: 2em;
+}
+#logoWrapper:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -25%;
+  left: -25%;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+@media (min-width: 715px) {
+
+  #logoWrapper {
+    height: 50px;
+    width: 50px;
+    top: 0.5em;
+    left: 1.2em;
+  }
+  #logoWrapper::before{
+    
+    height: 75px;
+    width: 75px;
+  }
+}
+.primary-navigation,
+.aside-sidebar-wrapper,
+.show-aside-sidebar-wrapper {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: hsl(0deg 25% 50% / 10%);
+  backdrop-filter: blur(1.5rem);
+}
+.primary-header {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-nav-toggle,
+.aside-sidebar-wrapper,
+.close-button {
+  display: none;
+}
+.primary-navigation .anchorLink,
+.sidebar-navigation .anchorLink {
+  font-weight: 1000;
+  font-size: 150%;
+  margin-inline-end: 0.75em;
+}
+
+.primary-navigation .anchorLink:hover,
+.sidebar-navigation .anchorLink:hover {
+  color: var(--clr-primary-10);
+  box-shadow: 0px 2px var(--clr-primary-10);
+}
+
+.circle-bottom-curve {
+  position: absolute;
+  margin-inline: 1rem;
+  height: 155px;
+  width: 100%;
+}
+
+.circle-bottom-curve {
+  z-index: 3;
+  background: var(--brown-solid);
+  border-radius: 0 0 50% 50%/ 0 0 100% 100%;
+  transform: scaleX(1.5);
+}
+
+header .header-curve-svg{
+  position: absolute;
+  width: 100%;
+  margin:0;
+  padding:0;
+}
+
+@media (max-width: 65rem) {
+  .primary-navigation {
+    display: none;
+  }
+  .aside-sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    inset: 0 0 0 30%;
+    flex-direction: column;
+    padding: min(30vh, 10rem) 2em;
+    transform: translateX(100%);
+    transition: transform 350ms ease-in-out;
+  }
+
+  .show-sidebar {
+    transform: translateX(0%);
+  }
+
+  .sidebar-navigation {
+    flex-direction: column;
+    --gap: 2em;
+  }
+  .aside-sidebar-wrapper .anchorLink {
+    font-size: 200%;
+  }
+
+  .aside-sidebar-wrapper {
+    display: flex;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    width: 2.5rem;
+    aspect-ratio: 1;
+    top: 2em;
+    right: 2em;
+  }
+  .close-button {
+    display: inline-block;
+    cursor: pointer;
+    z-index: 9999;
+    color: hsl(36, 63%, 76%);
+    background-color: transparent;
+    border: none;
+    border-radius: 4rem;
+    position: absolute;
+    top: 2em;
+    right: 1.5em;
+    font-size: 38px;
+    font-weight: bolder;
+  }
+
+  .close-button:hover {
+    color: var(--clr-primary-1);
+    background: var(--clr-primary-8);
+  }
+}
+
+@media (min-width: 45rem) {
+  .primary-navigation {
+    padding-block: 2rem;
+    padding-inline: clamp(1.5rem, 5vh, 10rem);
+  }
+}

@@ -1,0 +1,156 @@
+:root {
+  --triangle-light-color: #dbb47b;
+  --triangle-dark-color: #f68427;
+}
+/* Hero */
+
+.hero-container {
+  position: relative;
+  background-image: url("../../static/images/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 90vh;
+}
+
+@media (min-width: 1200px) {
+  .hero-container {
+    background-image: url("../../static/images/hero-bg.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 86vh;
+  }
+}
+.landing-text-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  z-index: 1;
+  text-align: center;
+}
+
+.landing-text-wrapper h1 {
+  color: rgb(243, 196, 140, 1);
+  font-weight: 200;
+  font-size: 7rem;
+  font-family: "Maria Aishane";
+  /* font-family: var(--ff-alt-one, "sans serif"); */
+}
+
+
+.landing-text-wrapper h1 .top-hero-text {
+  display: inline-block;
+  padding-bottom: 2rem;
+  font-family: "Merriweather";
+}
+
+.animating {
+  background: 50% 100% / 50% 50% no-repeat
+    radial-gradient(
+      ellipse at bottom,
+      rgb(243, 196, 140, 1),
+      transparent,
+      transparent
+    );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  animation: reveal 3000ms ease-in-out forwards 200ms,
+    glow 2500ms linear infinite 2000ms;
+}
+
+@keyframes reveal {
+  80% {
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 300% 300%;
+  }
+}
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px rgb(243, 196, 140, 1);
+  }
+}
+
+.hero-button {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-container .hero-button svg {
+  display:inline-block;
+  cursor: pointer;
+  width: 4rem;
+  height: 3rem;
+  vertical-align: middle;
+}
+
+.hero-container .hero-button #DarkGroup {
+  fill: var(--triangle-dark-color);
+}
+
+.hero-container .hero-button #LightGroup {
+  fill: var(--triangle-light-color);
+}
+
+.hero-container .hero-button #dark1,
+.hero-container .hero-button #light1,
+.hero-container .hero-button #dark2 {
+  transition: all 1s ease;
+}
+
+.hero-container .hero-button #dark2 {
+  transform: translateX(-100%);
+}
+
+.hero-button-text-wrapper {
+  font-family: "Merriweather";
+  font-weight: normal;
+  font-size: 120%;
+}
+
+.hero-container .hero-button:hover span {
+  transition: all 2s ease;
+}
+.hero-container .hero-button:hover #light1,
+.hero-container .hero-button svg:hover #light1 {
+  transform: translateX(40%);
+}
+
+.hero-container .hero-button:hover #dark1,
+.hero-container .hero-button svg:hover #dark1 {
+  transform: translateX(20%);
+  opacity: 0;
+}
+
+.hero-container .hero-button:hover #dark2,
+.hero-container .hero-button svg:hover #dark2 {
+  transform: translateX(0%);
+}
+
+@media (min-width: 0rem) and (max-width:35rem){
+
+  .top-hero-text{
+    font-size: 5.75rem;
+  }
+  .bottom-hero-text{
+    font-size: 5.5rem;
+  }
+  .hero-button-text-wrapper {
+    font-size: 120%;
+  }
+
+  .hero-container .hero-button svg {
+    display:none;
+  }
+}

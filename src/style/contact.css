@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Maria Aishane";
+  src: url("../../static/fonts/Maria Aishane Script.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.contact-section{
+    background-color: #270d01;
+}
+
+.contact-section .contact-heading{
+    margin-bottom:2rem;
+    font-weight: 900;
+    
+    font-size: 280%;
+    text-align: center;
+    font-family: "Maria Aishane";
+    color: #D8A875;
+    letter-spacing: 0.5rem;
+}
+
+.contact-section .contact-form{
+    
+    width:85%;
+    margin-inline: auto;
+    padding:1rem;
+    padding-inline: 2rem;
+    background-color: rgba(159, 96, 96, 0.2);
+    backdrop-filter: blur(1rem);
+    border-radius: 5px;
+    
+}
+
+@media screen and (min-width: 50rem) {
+    
+    .contact-section .contact-form{
+        width:50%;
+    }
+}

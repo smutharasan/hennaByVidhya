@@ -1,0 +1,22 @@
+/*#########*/
+/* Footer */
+/*#########*/
+.custom-footer {
+  text-align: center;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--black);
+  color: var(--white);
+}
+.custom-footer h5 {
+  margin-bottom: 0;
+}
+.custom-footer p {
+  margin-bottom: 0;
+}
+.custom-footer span,
+.custom-footer a {
+  color: var(--primary-500);
+}

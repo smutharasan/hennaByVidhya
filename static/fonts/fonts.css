@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Beautiful Bloom Alt";
+  src: url("BeautifulBloom-Alt.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Beautiful Bloom";
+  src: url("BeautifulBloom-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Noelan";
+  src: url("noelan script.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "Maria Aishane";
+  src: url("../../static/fonts/Maria Aishane Script.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.services-section {
+  background: #270d0100;
+  padding-block: 0;
+}
+.services-container, .booking-apt-form {
+  width: 85%;
+  margin: auto;
+}
+
+.booking-apt-form {
+  background: rgba(0, 0, 0, .25);
+  padding: 2rem;
+  margin-block:1rem;
+}
+
+.booking-apt-form .booking-form-header{
+    font-size: 280%;
+    text-align: center;
+    font-family: "Maria Aishane";
+    color: #D8A875;
+    letter-spacing: 0.5rem;
+}
+.services-heading{
+  margin: auto; 
+  text-align:center;
+}
+
+.services-grid {
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  --gap: 1.75rem;
+  padding-inline: 1rem;
+  height: fit-content;
+}
+
+@media screen and (min-width: 70rem){
+  .services-grid {
+    margin: auto;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1.5fr));
+  }
+}
+
+@media screen and (min-width: 1747px){
+  .services-grid {
+    margin: auto;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1.5fr));
+  }
+}
+
+.services-card {
+  aspect-ratio: 1/1;
+  background: rgba(0, 0, 0, .25);
+  color: hsl(36, 57%, 67%);
+  text-align: center;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  padding-block:2rem;
+  padding-inline:1rem;
+}
+
+.services-card svg {
+  object-fit: cover;
+  width: 50%;
+  max-width: 50%;
+  aspect-ratio: 1/1.05;
+  
+}
+
+
+.services-card .service-description, .services-card .price-description{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+}
+
+
+.services-card .price-description{
+  font-weight: bold;
+  font-size: 2.25em;
+  padding-block: .5em;
+}
+
+.services-card .service-description{
+  font-size: 1.5em;
+}
+
+/**Booking Form Style **/
+.test{
+  --color: #f1e4cf;
+  --color2: #be8f60;
+}
+
+/**Waves **/
+.services-section .flipped{
+  transform:rotate(180deg);
+  
+}
+
+.services-section .spacer{
+  background-image: url("../components/curve-svgs/layered-waves-haikei.svg");
+  aspect-ratio: 100/20;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  
+}

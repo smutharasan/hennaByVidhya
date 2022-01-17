@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Maria Aishane";
+  src: url("../../static/fonts/Maria Aishane Script.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.portfolio-section {
+  background: #351100;
+  padding-block:6.25rem;
+  margin-top: 0;
+}
+
+.portfolio-header {
+  margin: 2rem auto;
+  font-size: 330%;
+  font-family: "Maria Aishane";
+  color: #D8A875;
+  border-bottom: 3px solid #D8A875;
+  letter-spacing: 0.37rem;
+}
+
+.portfolio-container {
+  margin: 0 2rem 4.210rem 2rem;
+  padding-block: 2.5rem;
+  background-color:rgb(255, 255, 255,0.15);
+  height: fit-content;
+}
+
+.featured-grid,
+.pictures-grid {
+  --gap:2.5rem;
+  margin: 1rem 0 0 0;
+  padding-inline: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  
+  height: fit-content;
+}
+
+.card, .featured-rectangle .featured-img-rectangle{
+  border-radius: 12px;
+  aspect-ratio: 1/1.05;
+}
+
+.card, .card .featured-card, .card .featured-card img, .card img, .card video{
+  border:none;
+  border-radius: 10px;
+} 
+
+.card video{
+  object-fit: cover;
+  width:100%;
+  aspect-ratio: 1/1.05;
+}
+
+
+.featured-card {
+}
+
+
+
+/**Media Queries **/
+@media (min-width: 57.18888rem) and (max-width: 74.99999999rem){
+  
+  .portfolio-section {
+    padding-block:150px;
+  }
+  
+  .featured-rectangle {
+    grid-column: span 2;
+    aspect-ratio: 2/1;
+  }
+  .featured-rectangle .featured-img-rectangle{
+    aspect-ratio: 2/1;
+  }
+}
+@media (min-width: 75rem) {
+  .portfolio-section {
+    padding-block:170px;
+  }
+
+  .portfolio-container {
+    background-color: transparent;
+    padding-top:0;
+  }
+
+  .featured-grid,
+  .pictures-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  
+  .featured-square {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  
+  .featured-rectangle .featured-img-rectangle{
+    aspect-ratio: 2/1;
+  }
+  
+  .featured-rectangle {
+    grid-column: span 2;
+    aspect-ratio: 2/1;
+  }
+  
+  
+  .featured-grid,
+  .pictures-grid {
+    padding-inline: 1.5rem;
+    padding-block: 1.5rem;
+    background-color:rgb(255, 255, 255,0.15);
+  }
+  
+}
+
+@media (min-width: 1570px){
+  .portfolio-container{
+    margin-bottom: 3rem;
+    margin-inline: 6rem;
+  }
+  
+  .portfolio-header {
+    margin-top: 5rem;
+    margin-inline: auto;
+  }
+
+}
+
+@media (min-width: 0rem) and (max-width:50rem){
+  .portfolio-header{
+    margin:auto;
+    font-size: 250%;
+  }
+  .portfolio-section {
+    padding-block:6.25rem;
+  }
+}
